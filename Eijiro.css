@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
+
+body {
+    font-family: -apple-system, 'HiraKakuProN-W3';
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+p {
+    padding-left: 1.5em;
+    font-size: 10pt;
+    line-height: 1.5em;
+}
+p.attr {
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 8pt;
+}
+
+ol {
+    line-height: 1.5em;
+    border-bottom: 20px;
+}
+
+li {
+    font-size: 9.5pt;
+    border-bottom: 10px;
+}
+
+span.pr:before {
+    content: ' / ';
+}
+
+span.pr:after {
+    content: ' / ';
+}
+
+span.pr {
+    font-size: 10pt;
+    color: #888;
+}
+
+span.attention {
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #eee;
+    background-color: #888;
+    padding: 2px 4px;
+    margin: 4px;
+    -webkit-border-radius: 2px;
+}
+
+span.attr {
+    border: solid #eee;
+    border-width: 1px;
+    padding: 2px 3px 2px 0px;
+    font-weight: bold;
+    color: #888;
+    margin: 4px 0px 4px 8px;
+    -webkit-border-radius: 2px;
+}
+
+span.attr .level:before {
+    content: 'レベル';
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    color: #eee;
+    background: #888;
+    padding: 3px;
+    margin-left: -1px;
+    margin-right: 4px;
+}
+
+span.attr .kana:before {
+    content: 'カナ';
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    color: #eee;
+    background: #888;
+    padding: 3px;
+    margin-left: -1px;
+    margin-right: 4px;
+}
+
+span.attr .part:before {
+    content: '文節';
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    color: #eee;
+    background: #888;
+    padding: 3px;
+    margin-left: -1px;
+    margin-right: 4px;
+}
+
+span.attr .conj:before {
+    content: '変化';
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    color: #eee;
+    background: #888;
+    padding: 3px;
+    margin-left: -1px;
+    margin-right: 4px;
+}
+
+span.wordclass {
+    font-size: 8pt;
+    margin-bottom: 1.5em;
+    background-color: white;
+    border: solid #eee;
+    border-width: 1px;
+    padding: 3px 6px;
+    margin: 8px;
+    -webkit-border-radius: 2px;
+}
+
+span.order {
+    font-size: 8pt;
+    clear: both;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+span.ruby {
+    font-size: 0.8em;
+    color: #888;
+}

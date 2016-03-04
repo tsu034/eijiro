@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>Japanese</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.watermint.dictionary.Eijiro</string>
+	<key>CFBundleName</key>
+	<string>英辞郎</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.144.1</string>
+	<key>DCSDictionaryCopyright</key>
+	<string>Copyright © 2007 EDP</string>
+	<key>DCSDictionaryDefaultPrefs</key>
+	<dict>
+		<key>display-column</key>
+		<string>1</string>
+		<key>display-picture</key>
+		<string>1</string>
+		<key>pronunciation</key>
+		<string>0</string>
+		<key>version</key>
+		<string>1</string>
+	</dict>
+	<key>DCSDictionaryFrontMatterReferenceID</key>
+	<string>front_back_matter</string>
+	<key>DCSDictionaryManufacturerName</key>
+	<string>EDP / Converter by github.com/watermint/eijiro</string>
+</dict>
+</plist>
