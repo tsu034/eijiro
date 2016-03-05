@@ -442,8 +442,8 @@ class WordDefinition < Word
   end
 
   def render_ruby(desc)
-    desc.gsub(/｛(.+?)｝/) do |r|
-      "<span class='ruby'>#{r}</span>"
+    desc.gsub(/(\p{Han}+?)｛([\s\p{Katakana}\p{Hiragana}]+?)｝/) do |r|
+      "<ruby><rb>#{$1}</rb><rp>(</rp><rt>#{$2}</rt><rp>)</rp></ruby>"
     end
   end
 
