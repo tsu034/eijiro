@@ -81,13 +81,26 @@ class WordChunk < Word
     entries = entries_with_priority
     entries.keys.sort.map do |k|
       klass_label = entries[k][0][:desc][:label]
-      "#{render_wordclass(klass_label)}<ol>" +
-      entries[k].sort_by do |e|
-        e[:prio]
-      end.map do |e|
-        "<li>#{e[:word].render_body}</li>"
-      end.join('') +
-      '</ol>'
+      klass_head  = render_wordclass(klass_label)
+      if klass_head.strip.empty?
+        klass_item_head = '<p>'
+        klass_item_tail = '</p>'
+        klass_tail      = ''
+      else
+        klass_head      = klass_head + '<ol>'
+        klass_item_head = '<li>'
+        klass_item_tail = '</li>'
+        klass_tail      = '</ol>'
+      end
+
+      klass_head +
+        entries[k].sort_by do |e|
+          e[:prio]
+        end.map do |e|
+          klass_item_head + e[:word].render_body + klass_item_tail
+        end.join('') + 
+        klass_tail
+
     end.join('')
   end
 
